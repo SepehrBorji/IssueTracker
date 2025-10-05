@@ -15,6 +15,7 @@ public class Issue
     public IssueType Type { get; set; } = IssueType.Task;
 
     public IssueStatus Status { get; set; } = IssueStatus.Open;
+    public IssuePriority PriorityLevel { get; set; } = IssuePriority.High;
 
     /// <summary>
     /// Local timestamp when the issue was created (uses machine local time).
