@@ -4,5 +4,5 @@ public enum IssuePriority
 {
     High = 0,
     Medium = 1,
-    Closed = 2
+    Low = 2
 }

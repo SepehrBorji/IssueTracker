@@ -16,15 +16,15 @@ namespace IssueTracker.ConsoleApp.Services
             _db = db;
         }
 
-        public int AddIssue(string title, string description, IssueType type)
+        public int AddIssue(string title, string description, IssuePriority priority, IssueType type, IssueStatus status = IssueStatus.Open)
         {
             var issue = new Issue();
             issue.Title = title;
             issue.Description = string.IsNullOrWhiteSpace(description) ? null : description;
             issue.Type = type;
-            issue.Status = IssueStatus.Open;
+            issue.Status = status;
+            issue.PriorityLevel = priority;
             issue.CreatedAt = DateTime.Now;
-
             _db.Issues.Add(issue);
             _db.SaveChanges();
             return issue.Id;
@@ -75,6 +75,34 @@ namespace IssueTracker.ConsoleApp.Services
             }
 
             issue.Status = newStatus;
+            issue.UpdatedAt = DateTime.Now;
+            _db.SaveChanges();
+            return true;
+        }
+
+        public bool UpdateIssueDescription(int id, string newDescription)
+        {
+            var issue = _db.Issues.FirstOrDefault(i => i.Id == id);
+            if (issue == null)
+            {
+                return false;
+            }
+
+            issue.Description = newDescription;
+            issue.UpdatedAt = DateTime.Now;
+            _db.SaveChanges();
+            return true;
+        }
+
+        public bool UpdateIssuePriority(int id, IssuePriority newPriority)
+        {
+            var issue = _db.Issues.FirstOrDefault(i => i.Id == id);
+            if (issue == null)
+            {
+                return false;
+            }
+
+            issue.PriorityLevel = newPriority;
             issue.UpdatedAt = DateTime.Now;
             _db.SaveChanges();
             return true;
