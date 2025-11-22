@@ -8,7 +8,7 @@ It was developed as part of a personal portfolio project to demonstrate database
 
 ## 💡 Purpose
 
-This project was created to highlight:
+This phase was created to highlight:
 - Proficiency with **Entity Framework Core** and **LINQ**
 - Understanding of **data modeling**, **relationships**, and **migrations**
 - Implementation of **persistent storage** using **SQLite**
@@ -50,7 +50,7 @@ It serves as a console-based foundation for what could later evolve into a full-
 
 ## 📁 Project Structure
 
-SquashIt/  
+IssueTracker.ConsoleApp/  
 │  
 ├── Models/ # Bug and Category classes  
 ├── Data/ # DbContext and EF Core configuration  
