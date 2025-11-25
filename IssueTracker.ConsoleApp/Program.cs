@@ -13,7 +13,7 @@ namespace IssueTracker.ConsoleApp
         {
             using (var db = new IssueTrackerContext())
             {
-                // Applies pending migrations automatically (from Step 3)
+                // Applies pending migrations automatically
                 db.Database.Migrate();
 
                 var service = new IssueService(db);
