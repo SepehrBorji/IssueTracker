@@ -1,7 +1,7 @@
 ## 🐞 SquashIt - A Bug Tracking Application
 <img alt="SquashIt Logo" src="images/logo.png" width=200px height=120px>  
 
-**SquashIt** is a **bug tracking application** built with **C#**, **Entity Framework Core**, and **ASP.Net**.  
+**SquashIt** (Phase 2) is a **bug tracking Web application backend ** built with **C#**, **Entity Framework Core**, and **ASP.Net Core**.  
 This phase molds the Phase 1 console application into a fully structured ASP.NET Core Web API, designed to provide a clean, scalable, and frontend-ready backend service. It demonstrates modern backend engineering practices including layered architecture, RESTful API design, Entity Framework Core integration, and production-ready patterns suitable for consumption by a React frontend in Phase 3.
 
 ---
@@ -20,6 +20,18 @@ This phase was created to highlight:
 It serves as the backend foundation of the full-stack version of the project, transforming the Phase 1 design into a scalable, maintainable, and API-driven system.
 
 ---
+
+## 🧩 Key Features
+
+- Fully implemented **RESTful API** for creating, updating, retrieving, and deleting issues  
+- Structured **clean architecture** separating Domain, Application, Infrastructure, and API layers  
+- Safe and explicit data handling using **Data Transfer Objects (DTOs)**  
+- **Entity Framework Core** integration for persistent storage with SQLite  
+- Automated API exploration and testing via **Swagger/OpenAPI**  
+- Centralized **service layer** for business logic with dependency injection  
+- Clear routing and well-defined endpoints ready for a React frontend in Phase 3  
+
+-------------
 
 ## 🗂️ Tech Stack
 
