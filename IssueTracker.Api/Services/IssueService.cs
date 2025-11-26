@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using IssueTracker.Api.Entities;
 using IssueTracker.Api.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -32,6 +33,13 @@ namespace IssueTracker.Api.Services
             await _db.SaveChangesAsync();
 
             return issue.Id;
+        }
+
+        public async Task<Issue?> GetIssueByIdAsync(int id)
+        {
+            return await _db.Issues
+                .AsNoTracking()
+                .FirstOrDefaultAsync(i => i.Id == id);
         }
 
 

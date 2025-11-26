@@ -1,11 +1,16 @@
 using IssueTracker.Api.Data;
 using Microsoft.EntityFrameworkCore;
+using IssueTracker.Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 
 // Enable Controllers (this lets you use controller classes instead of minimal APIs)
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.Converters.Add(
+            new System.Text.Json.Serialization.JsonStringEnumConverter());
+    });
 
 // Register DbContext using connection string from appsettings.json
 builder.Services.AddDbContext<IssueTrackerContext>(options =>
