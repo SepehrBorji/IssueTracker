@@ -6,6 +6,10 @@ This phase molds the Phase 1 console application into a fully structured ASP.NET
 
 ---
 
+<img alt="SquashIt API swagger" src="images/api-swagger.png" width=500px height=290px>  
+
+---
+
 ## 💡 Purpose
 
 This phase was created to highlight:

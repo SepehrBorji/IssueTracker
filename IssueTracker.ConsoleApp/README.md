@@ -1,8 +1,16 @@
 ## 🐞 SquashIt - A Bug Tracking Application
-<img alt="SquashIt Logo" src="images/logo.png" width=200px height=120px>  
+<img alt="SquashIt Logo" src="images/logo.png" width=200px height=120px>
 
 **SquashIt** (Phase 1) is a **bug tracking console application** built with **C#** and **Entity Framework Core**.  
 It was developed as part of a personal portfolio project to demonstrate database design, code-first development, and clean architecture practices within the .NET ecosystem.
+
+---
+
+<img alt="SquashIt Console app menu" src="images/console-app-menu.png" width=450px height=225px>
+
+<img alt="SquashIt Console app add issue" src="images/console-app-1.png" width=500px height=250px>
+
+<img alt="SquashIt Console app show all issues" src="images/console-app-2.png" width=600px height=50px>
 
 ---
 
