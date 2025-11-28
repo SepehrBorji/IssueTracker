@@ -67,10 +67,10 @@ Phase 3 will be added soon.
 
 ## 📂 Repository Structure
 
-├── IssueTracker.Api/
-│ └── README.md
-├── IssueTracker.ConsoleApp/
-│ └── README.md
+├── IssueTracker.Api/  
+│ └── README.md  
+├── IssueTracker.ConsoleApp  
+│ └── README.md  
 └── README.md (this file)
 
 ---
