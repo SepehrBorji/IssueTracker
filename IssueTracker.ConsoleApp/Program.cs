@@ -128,7 +128,7 @@ namespace IssueTracker.ConsoleApp
             var created = issue.CreatedAt.ToString("yyyy-MM-dd HH:mm");
             var updated = issue.UpdatedAt.HasValue ? issue.UpdatedAt.Value.ToString("yyyy-MM-dd HH:mm") : "-";
             return "#" + issue.Id + " [" + issue.Type + "] " + issue.Title + " — " + issue.Status
-                   + " | Created: " + created + " | Updated: " + updated;
+                   + " | Created: " + created + " | Updated: " + updated + "\n\t" + issue.Description;
         }
 
         private static void DoUpdateIssueDescription(IssueService service)
